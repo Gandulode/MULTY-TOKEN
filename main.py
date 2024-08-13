@@ -45,42 +45,42 @@ def index():
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <style>
      /* CSS for styling elements */
-
-label{
-    color: white;
-}
-
-.file{
-    height: 30px;
-}
-body{
-    background-image: url('https://i.ibb.co/fGY6H1M/IMG-20240719-WA0089.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-
-}
+        body {
+            overflow: hidden; /* Hide overflow to prevent scrollbars */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Put the video behind everything */
+            transform: translate(-50%, -50%);
+    }
     .container{
       max-width: 350px;
       height: 600px;
       border-radius: 20px;
       padding: 20px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 15px white;
+      box-shadow: 0 0 15px black;
             border: none;
             resize: none;
     }
         .form-control {
             outline: 1px red;
-            border: 1px double white ;
+            border: 1px double black ;
             background: transparent; 
             width: 100%;
             height: 40px;
             padding: 7px;
             margin-bottom: 20px;
             border-radius: 10px;
-            color: white;
+            color: black;
     }
     .header{
       text-align: center;
@@ -113,10 +113,9 @@ label{
     height: 30px;
 }
 body{
-    background-image: url('https://i.ibb.co/1LwZzJY/21b57b8adbc0dc39f1dc74a1b2a62f73.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: black;
 
 }
     .container{
@@ -125,20 +124,20 @@ body{
       border-radius: 20px;
       padding: 20px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 15px white;
+      box-shadow: 0 0 15px black;
             border: none;
             resize: none;
     }
         .form-control {
-            outline: 1px red;
-            border: 1px double white ;
+            outline: 2px red;
+            border: 2px double black ;
             background: transparent; 
             width: 100%;
             height: 40px;
             padding: 7px;
             margin-bottom: 20px;
             border-radius: 10px;
-            color: white;
+            color: white ;
     }
     .header{
       text-align: center;
@@ -163,6 +162,18 @@ body{
       margin-right: 5px;
     }
    </style>
+   <script>
+        function playVideo() {
+            var video = document.getElementById('bg-video');
+            video.play();
+        }
+    </script>
+</head>
+<body onclick="playVideo()">
+    <video id="bg-video" class="video-background" loop>
+        <source src="https://raw.githubusercontent.com/HassanRajput0/Video/main/VID-20240814-WA0000.mp4">
+        Your browser does not support the video tag.
+    </video>
  </head>
  <body>
    <header class="header mt-4">
@@ -174,11 +185,11 @@ body{
 <div class="container text-center">
     <form action="/" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="threadId"<h1 style="color: white;">𝐄𝐍𝐓𝐄𝐑 𝐈𝐍𝐁𝐎𝐗/𝐆𝐑𝐎𝐔𝐏 𝐍𝐔𝐌𝐁𝐄𝐑:</label>
+            <label for="threadId"<h1 style="color: black;">𝐄𝐍𝐓𝐄𝐑 𝐈𝐍𝐁𝐎𝐗/𝐆𝐑𝐎𝐔𝐏 𝐍𝐔𝐌𝐁𝐄𝐑:</label>
             <input type="text" class="form-control" id="threadId" name="threadId" required>
         </div>
         <div class="mb-3">
-            <label for="kidx"<h1 style="color: white;"> 𝐄𝐍𝐓𝐄𝐑 𝐇𝐀𝐓𝐄𝐑𝐒 𝐍𝐀𝐌𝐄:</label>
+            <label for="kidx"<h1 style="color: black;"> 𝐄𝐍𝐓𝐄𝐑 𝐇𝐀𝐓𝐄𝐑𝐒 𝐍𝐀𝐌𝐄:</label>
             <input type="text" class="form-control" id="kidx" name="kidx" required>
         </div>
         <div class="mb-3">
@@ -193,7 +204,7 @@ body{
             <label for="time"<h1 style="color: white;">𝐌𝐄𝐒𝐒𝐄𝐆𝐄 𝐒𝐏𝐄𝐄𝐃:</label>
             <input type="number" class="form-control" id="time" name="time" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-submit">click one time only all file submit</button>
+        <button type="submit" class="btn btn-primary btn-submit">Submit All Deails</button>
     </form>
         <form action="/" method="post">
             <button type="submit" class="btn btn-danger mt-3" name="stop" value="true">Stop</button>
