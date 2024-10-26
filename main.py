@@ -73,7 +73,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝐑𝐀𝐉𝐏𝐔𝐓 𝐑𝐍𝐓𝐄𝐑 𝐊𝐈𝐃𝐙</title>
+  <title>𝐓𝐈𝐖𝐀𝐑𝐈 𝐇𝐄𝐑𝐄</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -131,7 +131,7 @@ def send_message():
     </video>
 <body>
   <header class="header mt-4">
-    <h1 class="mt-3 text-white">♛༈𝐇𝐀𝐒𝐒𝐀𝐍 𝐑𝐀𝐉𝐏𝐔𝐓༈♛</h1> </header>
+    <h1 class="mt-3 text-white">♛༈𝐒𝐎𝐔𝐑𝐀𝐕 𝐓𝐈𝐖𝐀𝐑𝐈༈♛</h1> </header>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
